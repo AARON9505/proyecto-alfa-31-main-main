@@ -10,7 +10,7 @@
 
 
 
-<nav class="flex justify-between bg-mauve-950  text-mist-200 items-center px-3 py-2 font-bold">
+<nav class="flex justify-between bg-mauve-950  text-mist-200 items-center px-3 py-2 font-bold font-tecno">
 	<p class="flex text-xl">PROYECT-ARC</p>
 
 	<div class="bg-mauve-950 text-mist-200 rounded px-3.5 py-2.5 gap-6">
