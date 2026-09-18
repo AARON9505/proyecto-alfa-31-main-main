@@ -14,7 +14,7 @@
 	<p class="flex text-xl">PROYECT-ARC</p>
 
 	<div class="bg-mauve-950 text-mist-200 rounded px-3.5 py-2.5 gap-6">
-		<a href="/">menu</a>
+		<a href="/">Inicio</a>
 		<a href="/xbox">xbox</a>
 		<a href="/playstation">playstation</a>
 		<a href="/nintendo">nintendo</a>
