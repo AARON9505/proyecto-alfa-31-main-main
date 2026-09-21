@@ -10,7 +10,7 @@ export const games = [
     },
 
     {
-        title:"Zelda: Ocarina Of Time",
+        title:" Zelda: Ocarina Of Time",
         slug: "zelda-ocarina-of-time",
         img: "/zelda.jpg",
         description: "es la quinta entrega de saga The Legend of Zelda, desarrollado por Nintendo Entertainment Analysis and Development,  coodesarrollado por Grezzo, y publicado por Nintendo para la Nintendo 64. El primer juego con gráficos 3D de la serie​",

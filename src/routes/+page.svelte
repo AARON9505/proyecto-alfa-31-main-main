@@ -1,4 +1,6 @@
 <script>
+// @ts-nocheck
+
     import GameCard from "$lib/components/GameCard.svelte";
     import { games } from "$lib/data/games";
 import Icon from "@iconify/svelte";
@@ -15,7 +17,7 @@ import Icon from "@iconify/svelte";
     <div class="flex justify-between px-2">
         <a
             href="bios-setup"
-            class="flex items-center gap-1 rounded-lg text-cyan-300  border-4 border-b-cyan-300 border-r-4 border-b-4 border-l-4 border-t-4 px-7 py-7 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
+            class="flex items-center gap-1 rounded-lg text-cyan-300  border-4 border-b-cyan-300 border-r-4 border-b-4 border-l-4 border-t-4 px-7 py-7 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 shadow-2xl"
         >
             <Icon icon="heroicons-solid:chip" />
             <p class="items-center font-tecno">Bios setup</p>
@@ -47,8 +49,8 @@ import Icon from "@iconify/svelte";
             class="flex text-center justify-between px-1 py-30 relative pt-3 pb-3">
             
             
-            <div class=" relative px-5 pt-5 pb-60 flex-1">
-                <p>forza horizon</p>
+            <div class=" relative px-5 pt-5 pb-10 flex-1">
+                <p class="text-lime-500">forza horizon</p>
                 <img
                     src="/forza.jpg"
                     class="absolute top-0 left-0 z-10 h-full w-full object-cover"
@@ -57,7 +59,7 @@ import Icon from "@iconify/svelte";
             </div>
 
             <div class=" relative px-5 pt-60 pb-4 flex-1">
-                <p>Resident Evil:Requiem</p>
+                <p class="text-cyan-200">Resident Evil:Requiem</p>
                 <img
                     src="/resident.jpg"
                     class="absolute top-0 left-0 center-10 -z-10 h-full w-full object-cover"
@@ -66,7 +68,7 @@ import Icon from "@iconify/svelte";
             </div>
 
             <div class=" relative px-5 pt-60 pb-4 flex-1">
-                <p>Mario Kart</p>
+                <p class="text-red-700">Mario Kart</p>
                 <img
                     src="/mario.jpg"
                     class="absolute top-0 left-0 right-0 -z-10 h-full w-full object-cover"
@@ -158,7 +160,8 @@ import Icon from "@iconify/svelte";
     <section class="grid grid-cols-3">
 
         {#each games as Game}
-            <GameCard description={Game.description} img={Game.img} title={Game.title} helps={Game.helps} guides={Game.guides} hours={Game.hours} />
+            <GameCard  slug={Game.slug} description={Game.description} img={Game.img} title={Game.title} helps={Game.helps} guides={Game.guides} hours={Game.hours}/>
         {/each}
+    
     </section>
 </section>
