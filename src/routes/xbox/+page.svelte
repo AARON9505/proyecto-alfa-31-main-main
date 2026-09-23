@@ -29,9 +29,11 @@
 
 
 <section>
-<div class="flex-1  text-lime-500 px-3">
-    <p class="font-bold text-4xl pb-5">COMPLETION GUIDE</p>
-    <p class="text-3xl underline underline-offside pb-3">Chapter List</p>
+<div class="grid grid-flow-col grid-rows-3 px-20 pb-70">
+
+    <div class="flex-1 flex flex-col  text-lime-500 px-3 rounded-full border-b-lime-400 row-span-3">
+    <p class="font-bold text-4xl pb-2">COMPLETION GUIDE</p>
+    <p class="text-3xl underline underline-offside pb-2">Chapter List</p>
     <p>Chapter 1: The arrival</p>
      <Icon icon="akar-icons:play"/>
     <p>Chapter 2: into the void</p>
@@ -40,10 +42,31 @@
     <Icon icon="streamline:padlock-square-1-remix"/>
     <p>Chapter 4: Final descent</p>
     <Icon icon="streamline:padlock-square-1-remix"/>
+    </div>
+
+
+<div class="flex flex-col px-30  w-280 col-span-2 justify-start text-lime-500 row-span-2">
+    <p class="font-bold text-2xl">main object</p>
+    <div class="flex flex-col">    
+    <input type="checkbox" name="" id=""> 
+    <p class="flex flex-col">Infiltrate the control room</p>
+    <input type="checkbox" name="" id=""> 
+    <p>Retrieve the encrypted data core</p>
+    <input type="checkbox" name="" id="">
+    <p>Evacuate before the countdown ends</p>
+    </div>
 </div>
 
-<div class="flex-3">
-    <p>main object</p>
-    <p></p>
+<div class="flex text-lime-500 gap-1 items-center px-30">
+    <p>SECRET COLLECTIBLES</p>
+   <Icon icon="boxicons:cube-alt" width={32}/>
+   <p>01/03</p>
+    <Icon icon="game-icons:medal-skull" width={32}/>
+    <p>00/01</p>
+    <Icon icon="boxicons:coins" width={32}/>
+    <p>00/05</p>
 </div>
+
+</div>
+
 </section>
