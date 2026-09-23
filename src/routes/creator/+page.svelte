@@ -10,7 +10,7 @@ import  Icon  from  '@iconify/svelte';
     <button type="button">FOLLOW</button>
 
     <div>
-        <P>Followers:8,4k</P>
+        <p>Followers:8,4k</p>
         <p>Status: Online</p>
         <p>System-Guides</p>
         <p>Guides-Written</p>
