@@ -1,12 +1,14 @@
 <script>
-// @ts-nocheck
+    // @ts-nocheck
 
     import GameCard from "$lib/components/GameCard.svelte";
     import { games } from "$lib/data/games";
-import Icon from "@iconify/svelte";
+    import Icon from "@iconify/svelte";
 </script>
 
-<section class="flex flex-col items-stretch text-mauve-200 px-3 py-2 font-bold font-tecno">
+<section
+    class="flex flex-col items-stretch text-mauve-200 px-3 py-2 font-bold font-tecno"
+>
     <p class="text-mist-200 text-2xl">SELECT YOUR SYSTEM</p>
     <p class="text-mist-400">
         Access guides of games and optimize your gaming experience.maximun
@@ -17,7 +19,7 @@ import Icon from "@iconify/svelte";
     <div class="flex justify-between px-2">
         <a
             href="bios-setup"
-            class="flex items-center gap-1 rounded-lg text-cyan-300  border-4 border-b-cyan-300 border-r-4 border-b-4 border-l-4 border-t-4 px-7 py-7 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 shadow-2xl"
+            class="flex items-center gap-1 rounded-lg text-cyan-300 border-4 border-b-cyan-300 border-r-4 border-b-4 border-l-4 border-t-4 px-7 py-7 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 shadow-2xl"
         >
             <Icon icon="heroicons-solid:chip" />
             <p class="items-center font-tecno">Bios setup</p>
@@ -25,7 +27,7 @@ import Icon from "@iconify/svelte";
 
         <a
             href="controller-mapping"
-            class="flex items-center gap-1 rounded-lg  border-4 text-cyan-300 border-b-cyan-300 border-r-4 border-b-4 border-l-4 border-t-4 px-7 py-7 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
+            class="flex items-center gap-1 rounded-lg border-4 text-cyan-300 border-b-cyan-300 border-r-4 border-b-4 border-l-4 border-t-4 px-7 py-7 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
         >
             <Icon icon="teenyicons:nes-outline" />
             <p class="">controller mapping</p>
@@ -33,7 +35,7 @@ import Icon from "@iconify/svelte";
 
         <a
             href="optimization-guide"
-            class="flex items-center gap-1 rounded-lg  border-4 text-cyan-300 border-b-cyan-300 border-r-4 border-b-4 border-l-4 border-t-4 px-7 py-7 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
+            class="flex items-center gap-1 rounded-lg border-4 text-cyan-300 border-b-cyan-300 border-r-4 border-b-4 border-l-4 border-t-4 px-7 py-7 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
         >
             <Icon icon="eos-icons:compass" />
             <p class=" ">optimization guide</p>
@@ -46,9 +48,8 @@ import Icon from "@iconify/svelte";
         </div>
 
         <div
-            class="flex text-center justify-between px-1 py-30 relative pt-3 pb-3">
-            
-            
+            class="flex text-center justify-between px-1 py-30 relative pt-3 pb-3"
+        >
             <div class=" relative px-5 pt-5 pb-10 flex-1">
                 <p class="text-lime-500">forza horizon</p>
                 <img
@@ -158,10 +159,16 @@ import Icon from "@iconify/svelte";
     </section>
 
     <section class="grid grid-cols-3">
-
         {#each games as Game}
-            <GameCard  slug={Game.slug} description={Game.description} img={Game.img} title={Game.title} helps={Game.helps} guides={Game.guides} hours={Game.hours}/>
+            <GameCard
+                slug={Game.slug}
+                description={Game.description}
+                img={Game.img}
+                title={Game.title}
+                helps={Game.helps}
+                guides={Game.guides}
+                hours={Game.hours}
+            />
         {/each}
-    
     </section>
 </section>
